@@ -1,8 +1,8 @@
 {
     "name": "vscode-open-in-sourcetree",
     "displayName": "vscode-open-in-sourcetree",
-    "description": "Open root folder in SourceTree",
-    "version": "0.0.1",
+    "description": "Open project in SourceTree",
+    "version": "0.1.0",
     "publisher": "morrislaptop",
     "engines": {
         "vscode": "^1.16.0"
@@ -11,27 +11,42 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:openInSourceTree.open"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "openInSourceTree.open",
+                "title": "Open in SourceTree"
             }
-        ]
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "openInSourceTree.open"
+                }
+            ],
+            "editor/title/context": [
+                {
+                    "command": "duplicate.execute"
+                }
+            ]
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.5.2",
-        "vscode": "^1.1.5",
-        "mocha": "^3.5.0",
-        "eslint": "^4.6.1",
+        "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.0",
-        "@types/mocha": "^2.2.42"
+        "eslint": "^4.6.1",
+        "mocha": "^3.5.0",
+        "typescript": "^2.5.2",
+        "vscode": "^1.1.5"
+    },
+    "dependencies": {
+        "open": "0.0.5"
     }
 }
