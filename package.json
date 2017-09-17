@@ -1,6 +1,6 @@
 {
     "name": "vscode-open-in-sourcetree",
-    "displayName": "vscode-open-in-sourcetree",
+    "displayName": "Open in SourceTree",
     "description": "Open project in SourceTree",
     "version": "0.1.0",
     "publisher": "morrislaptop",
