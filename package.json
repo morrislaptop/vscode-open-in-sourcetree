@@ -3,7 +3,7 @@
     "displayName": "Open in SourceTree",
     "description": "Open project in SourceTree",
     "icon": "SourceTree_navy.png",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "publisher": "morrislaptop",
     "engines": {
         "vscode": "^1.16.0"
