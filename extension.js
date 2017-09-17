@@ -1,5 +1,4 @@
-var vscode = require('vscode')
-const findUp = require('find-up')
+const vscode = require('vscode')
 const open = require('open')
 
 async function openInSourceTree () {
