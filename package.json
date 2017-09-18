@@ -2,8 +2,9 @@
     "name": "vscode-open-in-sourcetree",
     "displayName": "Open in SourceTree",
     "description": "Open project in SourceTree",
+    "repository": "morrislaptop/vscode-open-in-sourcetree",
     "icon": "1024x1024.png",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "publisher": "morrislaptop",
     "engines": {
         "vscode": "^1.16.0"
