@@ -15,7 +15,7 @@ ext install vscode-open-in-sourcetree
 It adds 1 command to the command palette and 1 item to the context menu:
 
 ```js
-'Open in SourceTree' // Open the current project in GitTower
+'Open in SourceTree' // Open the current project in SourceTree
 ```
 
 ## Hints
