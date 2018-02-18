@@ -3,7 +3,7 @@ const open = require('open')
 
 async function openInSourceTree () {
     const { rootPath } = vscode.workspace
-    open(rootPath, 'SourceTree')
+    open(rootPath, '%LOCALAPPDATA%\\SourceTree\\SourceTree.exe')
 }
 
 function activate(context) {
