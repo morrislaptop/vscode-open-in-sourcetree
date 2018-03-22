@@ -20,7 +20,7 @@ It adds 1 command to the command palette and 1 item to the context menu:
 
 ## Hints
 
-Map `Opeen in Source Tree` action to this extension, add this to your `keybindings.json` file:
+Map `Open in Source Tree` action to this extension, add this to your `keybindings.json` file:
 
 ```json
   { "key": "⌘⌃S", "command": "openInSourceTree.open" }
