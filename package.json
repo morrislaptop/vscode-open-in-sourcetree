@@ -4,7 +4,7 @@
     "description": "Open project in SourceTree",
     "repository": "morrislaptop/vscode-open-in-sourcetree",
     "icon": "1024x1024.png",
-    "version": "0.2.6",
+    "version": "0.6.0",
     "publisher": "morrislaptop",
     "engines": {
         "vscode": "^1.16.0"
