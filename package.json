@@ -49,6 +49,7 @@
         "vscode": "^1.1.5"
     },
     "dependencies": {
-        "open": "0.0.5"
+        "find-root": "^1.1.0",
+        "opn": "^5.3.0"
     }
 }

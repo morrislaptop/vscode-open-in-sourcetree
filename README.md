@@ -2,6 +2,10 @@
 
 Adds a command for opening the current project in [SourceTree](https://www.sourcetreeapp.com/).
 
+- If there is a file open, it will open the git repo for that file
+- If it is a workspace, it will ask you what folder you would like to open
+- It will automatically find the best git repo to open
+
 ## Install
 
 Run the following in the command palette:
