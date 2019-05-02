@@ -15,11 +15,11 @@ async function askUserForPath(workspaceFolders)
     }
 }
 
-function findGitRoot(filepath) {
+function findRepoRoot(filepath) {
     let startingPath = fs.lstatSync(filepath).isDirectory() ? filepath : path.dirname(filepath)
 
     return findRoot(startingPath, function (dir) {
-        return fs.existsSync(path.resolve(dir, '.git'))
+        return fs.existsSync(path.resolve(dir, '.git')) || fs.existsSync(path.resolve(dir, '.hg'))
     })
 }
 
@@ -45,13 +45,13 @@ async function openInSourceTree () {
 
         if (! relevantPath) return
 
-        const gitPath = await findGitRoot(relevantPath)
+        const repoPath = await findRepoRoot(relevantPath)
 
-        await open(gitPath, { app: 'SourceTree' })
+        await open(repoPath, { app: 'SourceTree' })
     }
     catch (err) {
         console.error(err)
-        vscode.window.showErrorMessage('No git repo found.')
+        vscode.window.showErrorMessage('No Git or Mercurial repo found.')
     }
 }
 
